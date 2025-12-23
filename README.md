@@ -1,8 +1,8 @@
 # AI/ML Internship Tasks
 
-This repository contains completed AI/ML internship tasks implemented using Python and
+This repository contains completed **AI/ML internship tasks** implemented using Python and
 Jupyter Notebooks. Each task demonstrates practical understanding of data analysis,
-machine learning, and AI application development.
+machine learning workflows, and safe AI application development.
 
 ---
 
@@ -11,22 +11,23 @@ machine learning, and AI application development.
 ### Objective
 The objective of this task is to explore the classic **Iris dataset** to understand data
 distribution, feature relationships, and class separability. This task focuses on
-**exploratory data analysis (EDA)** and visualization.
+**exploratory data analysis (EDA)** and visualization techniques.
 
 ---
 
 ### Dataset
 - **Dataset Name:** Iris Dataset
 - **Source:** Built-in dataset (scikit-learn)
-- **Description:**  
-  The dataset contains 150 samples of iris flowers with four numerical features:
-  sepal length, sepal width, petal length, and petal width.
-  The target variable represents three iris species.
+
+**Description:**  
+The dataset contains 150 samples of iris flowers with four numerical features:
+sepal length, sepal width, petal length, and petal width.
+The target variable represents three iris species.
 
 ---
 
 ### Methodology
-- Loaded the dataset using Pandas / scikit-learn
+- Loaded the dataset using Pandas and scikit-learn
 - Inspected dataset structure and summary statistics
 - Visualized feature distributions using plots
 - Analyzed relationships between features and classes
@@ -35,15 +36,21 @@ distribution, feature relationships, and class separability. This task focuses o
 
 ### Key Insights
 - Petal length and petal width are the most discriminative features
-- Iris species are clearly separable using petal-related features
+- Iris species are clearly separable using petal-related attributes
 - The dataset is clean and well-balanced
 
 ---
 
 ### Skills Demonstrated
-- Data exploration and visualization
+- Exploratory Data Analysis (EDA)
+- Data visualization
 - Understanding of feature relationships
-- Basic data analysis workflow
+
+---
+
+### How to Run
+- 📘 [Task1_Iris_Exploration.ipynb](Task1_Iris_Exploration.ipynb)
+
 
 ---
 
@@ -52,17 +59,18 @@ distribution, feature relationships, and class separability. This task focuses o
 ### Objective
 The objective of this task is to build a **binary classification model** that predicts whether
 a person is at risk of heart disease based on medical and lifestyle attributes. This task
-demonstrates a complete machine learning pipeline.
+demonstrates a complete machine learning pipeline from preprocessing to evaluation.
 
 ---
 
 ### Dataset
 - **Dataset Name:** Heart Disease UCI Dataset
 - **Source:** Kaggle
-- **Description:**  
-  The dataset contains patient health attributes such as age, sex, chest pain type,
-  cholesterol level, blood pressure, and maximum heart rate.
-  The target variable indicates the presence or absence of heart disease.
+
+**Description:**  
+The dataset contains patient health attributes such as age, sex, chest pain type,
+cholesterol level, blood pressure, and maximum heart rate.
+The target variable indicates the presence or absence of heart disease.
 
 > **Note:** This notebook was originally developed using **Kaggle Notebook** and later
 exported as a Jupyter Notebook for submission.
@@ -83,14 +91,22 @@ exported as a Jupyter Notebook for submission.
 - The trained model achieved good predictive performance on unseen data
 - Clinical features such as age, chest pain type, cholesterol level, and heart rate
   significantly influenced predictions
-- Logistic Regression provided an interpretable baseline model
+- Logistic Regression provided an interpretable baseline model for medical datasets
 
 ---
 
 ### Limitations & Future Improvements
 - Dataset size is limited
-- Advanced ensemble models could improve performance
-- Further feature engineering and tuning may enhance results
+- Advanced ensemble models (e.g., Random Forest, XGBoost) could improve performance
+- Additional feature engineering and hyperparameter tuning may enhance results
+
+---
+
+### How to Run
+Open and execute the notebook:
+
+- 📘 [Task3_Heart_Disease_Prediction.ipynb](Task3_Heart_Disease_Prediction.ipynb)
+
 
 ---
 
@@ -118,7 +134,7 @@ responses.
 ### Key Features
 - Uses a system prompt to behave like a helpful medical assistant
 - Avoids diagnosis and medication dosage instructions
-- Implements safety filters for harmful queries
+- Implements safety filters for harmful or sensitive queries
 - Detects emotional tone (anxious / sad / neutral)
 - Secure API key handling via environment variables
 
@@ -132,6 +148,12 @@ responses.
 ---
 
 ### API Key Security
-The API key is **not stored** in the notebook or repository.
-It is loaded securely from a system environment variable:
+For security reasons, the API key is **not stored** in the notebook or repository.
+It is loaded securely from a system environment variable named:
+
+---
+
+### How to Run
+- 📘 [Task4_Health_Chatbot.ipynb](Task4_Health_Chatbot.ipynb)
+
 
